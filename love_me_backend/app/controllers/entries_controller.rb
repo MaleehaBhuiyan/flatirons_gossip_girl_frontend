@@ -1,5 +1,6 @@
 class EntriesController < ApplicationController
-
+    skip_before_action :authorized, raise:false
+    
     def index 
         @entries = Entry.all
         render json: @entries, status: :ok

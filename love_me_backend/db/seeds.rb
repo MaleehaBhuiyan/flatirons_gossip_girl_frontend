@@ -1,8 +1,8 @@
 #Users 
 
-u1 = User.create(first_name: "Maleeha", last_name: "Bhuiyan")
+# u1 = User.create(first_name: "Maleeha", last_name: "Bhuiyan", username: "Mbhuiyan99", password_digest: "12345")
 
-#JournalEntries
+# #JournalEntries
 
 e1 = Entry.create(
     user_id: 1,
