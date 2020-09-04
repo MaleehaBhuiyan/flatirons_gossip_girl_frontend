@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_31_125813) do
+ActiveRecord::Schema.define(version: 2020_09_04_132020) do
 
   create_table "entries", force: :cascade do |t|
     t.integer "user_id"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 2020_08_31_125813) do
     t.string "today_three"
     t.string "daily_affirmation"
     t.string "date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "moods", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "mood"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -26,3 +26,7 @@ e2 = Entry.create(
     daily_affirmation: "I am capable.",
     date: "August 26, 2020"
 )
+
+#Moods
+
+# m1 = Mood.create(user_id: 1, mood: "highlight")
