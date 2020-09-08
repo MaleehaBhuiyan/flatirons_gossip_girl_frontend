@@ -3,8 +3,6 @@ class CreateMoods < ActiveRecord::Migration[6.0]
     create_table :moods do |t|
       t.integer :user_id
       t.string :mood
-
-      t.timestamps
     end
   end
 end

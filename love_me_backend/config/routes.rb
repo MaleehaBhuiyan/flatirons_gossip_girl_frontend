@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :entries
   resources :moods
+  resources :boards
   
   namespace :api do
     namespace :v1 do

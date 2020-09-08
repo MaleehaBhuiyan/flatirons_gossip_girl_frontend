@@ -10,8 +10,6 @@ class CreateEntries < ActiveRecord::Migration[6.0]
       t.string :today_three
       t.string :daily_affirmation
       t.string :date 
-
-      t.timestamps
     end
   end
 end

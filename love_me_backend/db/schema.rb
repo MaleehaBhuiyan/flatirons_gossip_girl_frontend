@@ -10,7 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_04_132020) do
+ActiveRecord::Schema.define(version: 2020_09_07_140103) do
+
+  create_table "boards", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "main_title"
+    t.string "sub_title_one"
+    t.text "body_one"
+    t.string "img_url_one"
+    t.string "sub_title_two"
+    t.text "body_two"
+    t.string "img_url_two"
+    t.string "sub_title_three"
+    t.text "body_three"
+    t.string "img_url_three"
+    t.string "sub_title_four"
+    t.text "body_four"
+    t.string "img_url_four"
+    t.string "sub_title_five"
+    t.text "body_five"
+    t.string "img_url_five"
+    t.string "sub_title_six"
+    t.text "body_six"
+    t.string "img_url_six"
+    t.string "sub_title_seven"
+    t.text "body_seven"
+    t.string "img_url_seven"
+    t.string "sub_title_eight"
+    t.text "body_eight"
+    t.string "img_url_eight"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "entries", force: :cascade do |t|
     t.integer "user_id"
@@ -22,15 +53,11 @@ ActiveRecord::Schema.define(version: 2020_09_04_132020) do
     t.string "today_three"
     t.string "daily_affirmation"
     t.string "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "moods", force: :cascade do |t|
     t.integer "user_id"
     t.string "mood"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,8 +65,6 @@ ActiveRecord::Schema.define(version: 2020_09_04_132020) do
     t.string "password_digest"
     t.string "first_name"
     t.string "last_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
