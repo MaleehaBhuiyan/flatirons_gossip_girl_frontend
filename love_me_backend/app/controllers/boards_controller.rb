@@ -11,7 +11,7 @@ class BoardsController < ApplicationController
     end
 
     def create
-        boadr = Board.create(board_params)
+        board = Board.create(board_params)
         render json: board
     end
 
