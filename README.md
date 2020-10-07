@@ -1,3 +1,1 @@
-# flatironsGossipGirls
-
-# you
+# grokkingAlgorithms
